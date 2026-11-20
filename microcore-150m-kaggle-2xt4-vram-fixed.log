@@ -1,0 +1,183 @@
+8.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.3s 3 0.00s - to python to disable frozen modules.
+8.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.9s 7 0.00s - to python to disable frozen modules.
+8.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.3s 9 Python: 3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]
+10.3s 10 Installing the frozen tokenizer and data dependencies...
+20.2s 11 PyTorch: 2.11.0+cu130
+20.2s 12 CUDA runtime: 13.0
+20.2s 13 CUDA available: True
+20.2s 14 Visible GPUs: 2
+20.2s 15 GPU 0: Tesla T4 | 14.56 GiB
+20.2s 16 GPU 1: Tesla T4 | 14.56 GiB
+20.2s 17 DUAL-T4 HARDWARE CHECK: PASS
+20.7s 18 VERIFIED MICROCORE_150M_CONFIG.json: 4,927 bytes
+20.7s 19 VERIFIED MICROCORE_150M_TRAIN.py: 41,070 bytes
+20.7s 20 VERIFIED MICROCORE_150M_TRAIN_TESTS.py: 20,630 bytes
+20.7s 21 VERIFIED microcore_paths.py: 1,547 bytes
+21.0s 22 VERIFIED MICROCORE_REVISION_9_1_1_DATA_PREPARATION (1).py: 23,873 bytes
+21.0s 23 VERIFIED MICROCORE_REVISION_9_1_1_COLAB_VALIDATION (1).py: 16,393 bytes
+21.0s 24 VERIFIED MICROCORE_REVISION_9_1_2_INTEGRATION_FIXES.md: 8,306 bytes
+21.0s 25 VERIFIED MICROCORE_150M_TRAINING_LAUNCH.md: 5,180 bytes
+21.0s 26 \nAll 8 Revision 9.1.2 deliverables downloaded and SHA-verified.
+21.0s 27 Source directory: /kaggle/working/microcore_src
+21.2s 28 Prior output restored: False
+21.2s 29 Experiment data root: /kaggle/working/microcore_src/microcore_data
+21.2s 30 Free space on Kaggle working filesystem: 19.5 GiB
+21.2s 31 Free space on Kaggle temp filesystem: 2514.57 GiB
+22.5s 32 Shared data-root consistency: PASS
+22.5s 33 PREPARED: /kaggle/working/microcore_src/microcore_data/prepared
+22.5s 34 TRAIN: /kaggle/working/microcore_src/microcore_data/train_150m
+22.5s 35 Temporary shard cache: /kaggle/temp/microcore_hf_cache
+22.7s 36 Base selection absent/incomplete. Running pinned base-only preparation...
+22.7s 37 discovered 14 FineWeb-Edu shards at pinned revision 87f09149ef
+39.3s 38 000_00000.parquet: verified (2,152,819,114 bytes, lfs oid b1ba7b2ce4cb)
+390.8s 39 000_00000.parquet: rows=726,000 kept=724,511 tokens=730,384,446 (cum 730,384,446) [368s]
+390.8s 40 000_00000.parquet: cache copy deleted (verified sha256 recorded)
+410.5s 41 001_00000.parquet: verified (2,152,222,432 bytes, lfs oid 3fcf2dc69cd5)
+754.7s 42 001_00000.parquet: rows=729,000 kept=722,716 tokens=724,345,273 (cum 1,454,729,719) [732s]
+754.7s 43 001_00000.parquet: cache copy deleted (verified sha256 recorded)
+776.0s 44 002_00000.parquet: verified (2,151,796,315 bytes, lfs oid 547ae182d132)
+1115.1s 45 002_00000.parquet: rows=727,000 kept=716,433 tokens=720,324,215 (cum 2,175,053,934) [1092s]
+1115.1s 46 002_00000.parquet: cache copy deleted (verified sha256 recorded)
+1137.7s 47 003_00000.parquet: verified (2,152,437,524 bytes, lfs oid 22184e6eb257)
+1474.2s 48 003_00000.parquet: rows=734,000 kept=718,487 tokens=714,008,678 (cum 2,889,062,612) [1451s]
+1474.2s 49 003_00000.parquet: cache copy deleted (verified sha256 recorded)
+1490.2s 50 004_00000.parquet: verified (2,152,338,550 bytes, lfs oid 33557ddd87a0)
+1544.1s 51 004_00000.parquet: rows=115,238 kept=112,562 tokens=110,939,000 (cum 3,000,001,612) [1521s]
+1544.1s 52 004_00000.parquet: cache copy deleted (verified sha256 recorded)
+1544.1s 53 TOKEN TARGET REACHED at document boundary in 004_00000.parquet
+1544.1s 54 
+1544.1s 55 BASE SUBSET COMPLETE: 2,994,709 docs, 3,000,001,612 cl100k tokens (target 3,000,000,000)
+1544.1s 56 manifest: /kaggle/working/microcore_src/microcore_data/prepared/base_prep_manifest.json
+1544.1s 57 selection: /kaggle/working/microcore_src/microcore_data/prepared/base_selection.jsonl
+1544.7s 58 BASE SELECTION VERIFIED
+1544.7s 59 Documents: 2,994,709
+1544.7s 60 cl100k document tokens: 3,000,001,612
+1544.7s 61 Pinned revision: 87f09149ef4734204d70ed1d046ddc9ca3f2b8f9
+1545.0s 62 Token stream missing or incomplete: {'error': 'stream manifest missing'}
+1545.0s 63 Starting production reconstruction/materialization...
+1557.5s 64 selection: 2,994,709 documents across 5 shards
+1557.7s 65 estimated stream: 3,002,996,321 tokens (12.04 GB); free disk: 20.33 GB
+1990.4s 66 000_00000.parquet: 724,511 docs verified+written (730,384,446 doc tokens) [433s]
+2418.0s 67 001_00000.parquet: 722,716 docs verified+written (724,345,273 doc tokens) [860s]
+2847.5s 68 002_00000.parquet: 716,433 docs verified+written (720,324,215 doc tokens) [1290s]
+3270.8s 69 003_00000.parquet: 718,487 docs verified+written (714,008,678 doc tokens) [1713s]
+3368.8s 70 004_00000.parquet: 112,562 docs verified+written (110,939,000 doc tokens) [1811s]
+3418.3s 71 token stream complete: 2,994,709 docs, 3,000,001,612 doc tokens, 3,002,996,321 stream tokens (incl. EOS)
+3418.3s 72 manifest: /kaggle/working/microcore_src/microcore_data/prepared/base_tokens_manifest.json
+3450.2s 73 TOKEN STREAM VERIFIED
+3450.2s 74 Stream: /kaggle/working/microcore_src/microcore_data/prepared/base_tokens.u32
+3450.2s 75 Bytes: 12,011,985,284
+3450.2s 76 SHA-256: 236d63d01408aafc54c5e1e178cbad0e46626fe3cd7c625ee924273d4de099e6
+3450.2s 77 Documents: 2,994,709
+3450.2s 78 Document tokens: 3,000,001,612
+3450.2s 79 Stream tokens including EOS: 3,002,996,321
+3450.2s 80 Temporary parquet cache cleaned; verified stream remains in Kaggle working output.
+3450.2s 81 DDP entry point written and Python syntax-checked: /kaggle/working/microcore_src/MICROCORE_150M_KAGGLE_DDP.py
+3450.4s 82 RUN: /usr/bin/python3 -m torch.distributed.run --standalone --nproc_per_node=2 /kaggle/working/microcore_src/MICROCORE_150M_KAGGLE_DDP.py --run-dir /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp --max-steps 1 --microbatch 1 --accum 1 --ckpt-interval 1 --allow-nonstandard-batch
+3453.5s 83 
+3453.5s 84 *****************************************
+3453.5s 85 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3453.5s 86 *****************************************
+3453.7s 87 
+3453.7s 88 *****************************************
+3453.7s 89 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3453.7s 90 *****************************************
+3453.7s 91 
+3453.7s 92 
+3453.7s 93 *****************************************
+3453.7s 94 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3453.7s 95 *****************************************
+3492.2s 96 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3492.2s 97 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3492.2s 98 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3492.2s 99 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3492.4s 100 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3492.4s 101 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3492.4s 102 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3492.4s 103 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3500.5s 104 step 1/1 | loss 11.70440 | lr 3.000e-04 | global tokens 4,096 | peak GPU memory 3.66 GiB
+3500.7s 105 step 1/1 | loss 11.70440 | lr 3.000e-04 | global tokens 4,096 | peak GPU memory 3.66 GiB
+3520.7s 106 DDP TRAINING PASS COMPLETE: 1 steps, 4,096 global tokens consumed.
+3520.7s 107 Checkpoint directory: /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp
+3520.9s 108 DDP TRAINING PASS COMPLETE: 1 steps, 4,096 global tokens consumed.
+3520.9s 109 Checkpoint directory: /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp
+3524.9s 110 First DDP smoke pass: PASS
+3525.1s 111 RUN: /usr/bin/python3 -m torch.distributed.run --standalone --nproc_per_node=2 /kaggle/working/microcore_src/MICROCORE_150M_KAGGLE_DDP.py --run-dir /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp --max-steps 2 --microbatch 1 --accum 1 --ckpt-interval 1 --allow-nonstandard-batch --resume
+3526.7s 112 
+3526.7s 113 *****************************************
+3526.7s 114 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3526.7s 115 *****************************************
+3526.9s 116 
+3526.9s 117 *****************************************
+3526.9s 118 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3526.9s 119 *****************************************
+3526.9s 120 
+3526.9s 121 
+3526.9s 122 *****************************************
+3526.9s 123 Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+3526.9s 124 *****************************************
+3564.6s 125 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3564.6s 126 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3564.7s 127 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3564.7s 128 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3564.8s 129 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3564.8s 130 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3564.8s 131 model: 12 layers, d_model=732, 6 heads, tied embeddings, vocab=100278
+3564.8s 132 EXACT PARAMETER COUNT: 150,580,452 (+0.387% vs 150,000,000)
+3567.2s 133 Resumed from /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp/ckpt_last.pt: step=1, tokens=4,096, local_seq_cursor=1
+3567.4s 134 Resumed from /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp/ckpt_last.pt: step=1, tokens=4,096, local_seq_cursor=1
+3594.7s 135 DDP TRAINING PASS COMPLETE: 2 steps, 8,192 global tokens consumed.
+3594.7s 136 Checkpoint directory: /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp
+3594.9s 137 DDP TRAINING PASS COMPLETE: 2 steps, 8,192 global tokens consumed.
+3594.9s 138 Checkpoint directory: /kaggle/working/microcore_src/microcore_data/train_150m_smoke_ddp
+3597.2s 139 Traceback (most recent call last):
+3597.2s 140 File "<string>", line 1, in <module>
+3597.2s 141 import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+3597.2s 142 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3597.2s 143 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+3597.2s 144 raise_for_execution_errors(nb, output_path)
+3597.2s 145 ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+3597.2s 146 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+3597.2s 147 raise error
+3597.2s 148 papermill.exceptions.PapermillExecutionError:
+3597.2s 149 ---------------------------------------------------------------------------
+3597.2s 150 Exception encountered at "In [9]":
+3597.2s 151 ---------------------------------------------------------------------------
+3597.2s 152 JSONDecodeError                           Traceback (most recent call last)
+3597.2s 153 /tmp/ipykernel_23/4265473499.py in <cell line: 0>()
+3597.2s 154 11 import json
+3597.2s 155 12 smoke_log = SMOKE_DIR / "train_log.jsonl"
+3597.2s 156 ---> 13 records = [json.loads(line) for line in smoke_log.read_text(encoding="utf-8").splitlines() if line.strip()]
+3597.2s 157 14 assert any(r.get("event") == "run_start" for r in records)
+3597.2s 158 15 assert any(r.get("event") == "checkpoint_saved" for r in records)
+3597.2s 159 
+3597.2s 160 /usr/lib/python3.13/json/__init__.py in loads(s, cls, object_hook, parse_float, parse_int, parse_constant, object_pairs_hook, **kw)
+3597.2s 161 350             parse_int is None and parse_float is None and
+3597.2s 162 351             parse_constant is None and object_pairs_hook is None and not kw):
+3597.2s 163 --> 352         return _default_decoder.decode(s)
+3597.2s 164 353     if cls is None:
+3597.2s 165 354         cls = JSONDecoder
+3597.2s 166 
+3597.2s 167 /usr/lib/python3.13/json/decoder.py in decode(self, s, _w)
+3597.2s 168 346         end = _w(s, end).end()
+3597.2s 169 347         if end != len(s):
+3597.2s 170 --> 348             raise JSONDecodeError("Extra data", s, end)
+3597.2s 171 349         return obj
+3597.2s 172 350
+3597.2s 173 
+3597.2s 174 JSONDecodeError: Extra data: line 1 column 500 (char 499)
+3597.2s 175 
+3602.1s 176 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3602.1s 177 cells[i][c] = re.sub('\\\\\|', '|', cell)
+3602.3s 178 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3602.3s 179 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3603.4s 180 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3603.5s 181 [NbConvertApp] Writing 76306 bytes to __notebook__.ipynb
+3606.1s 182 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+3606.8s 183 [NbConvertApp] Writing 403143 bytes to __results__.html
